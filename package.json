@@ -1,0 +1,29 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "FrontEnd mentor challange",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio Cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^6.0.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.24",
+    "sass": "^1.63.2"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions",
+    "last 1 version"
+  ]
+}
