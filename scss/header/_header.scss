@@ -13,6 +13,17 @@
   }
 }
 
+.header-shadow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 6.75rem;
+  width: calc(100% - 255px);
+  background-color: hsl(240 100% 5% / 0.5);
+}
+
 .logo {
   padding: 3rem 0 0 1.5rem;
 
@@ -70,6 +81,7 @@
     gap: 4rem;
     overflow: hidden;
     transition: all 0.3s;
+    z-index: 1;
 
     @include m.tablet {
       position: relative;
@@ -93,13 +105,5 @@
   &__link {
     font-size: 2rem;
     color: v.$veryDarkBlue;
-  }
-}
-
-.body-shadow {
-  background-color: hsl(240 100% 5% / 0.5);
-
-  @include m.tablet {
-    background-color: transparent;
   }
 }

@@ -364,6 +364,17 @@ p {
   }
 }
 
+.header-shadow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 6.75rem;
+  width: calc(100% - 255px);
+  background-color: hsla(240, 100%, 5%, 0.5);
+}
+
 .logo {
   padding: 3rem 0 0 1.5rem;
 }
@@ -421,6 +432,7 @@ p {
   gap: 4rem;
   overflow: hidden;
   transition: all 0.3s;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .nav__container-wd-255 {
@@ -444,15 +456,6 @@ p {
 .nav__link {
   font-size: 2rem;
   color: hsl(240, 100%, 5%);
-}
-
-.body-shadow {
-  background-color: hsla(240, 100%, 5%, 0.5);
-}
-@media (min-width: 768px) {
-  .body-shadow {
-    background-color: transparent;
-  }
 }
 
 .future {
@@ -484,6 +487,18 @@ p {
   text-align: center;
   width: 52.5%;
 }
+.future-main {
+  position: relative;
+}
+.future-bg-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsla(240, 100%, 5%, 0.5);
+}
 
 .new {
   padding: 3rem 1.5rem;
@@ -512,6 +527,7 @@ p {
 }
 
 .news {
+  position: relative;
   flex-direction: column;
   gap: 3rem;
   padding: 3rem 1.5rem;
@@ -540,6 +556,15 @@ p {
 .news__text {
   color: hsl(236, 13%, 42%);
   line-height: 1.5;
+}
+.news-bg-color::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsla(240, 100%, 5%, 0.5);
 }
 
 .attribution {

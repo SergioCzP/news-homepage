@@ -2,6 +2,7 @@
 @use "base/mixins" as m;
 
 .news {
+  position: relative;
   flex-direction: column;
   gap: 3rem;
   padding: 3rem 1.5rem;
@@ -34,5 +35,15 @@
   &__text {
     color: v.$darkGrayishBlue;
     line-height: 1.5;
+  }
+
+  &-bg-color::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(240, 100%, 5%, 0.5);
   }
 }

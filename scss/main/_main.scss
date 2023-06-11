@@ -33,4 +33,18 @@
     text-align: center;
     width: 52.5%;
   }
+
+  &-main {
+    position: relative;
+  }
+
+  &-bg-shadow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(240, 100%, 5%, 0.5);
+  }
 }
