@@ -374,6 +374,11 @@ p {
   width: calc(100% - 255px);
   background-color: hsla(240, 100%, 5%, 0.5);
 }
+@media (min-width: 768px) {
+  .header-shadow::after {
+    display: none;
+  }
+}
 
 .logo {
   padding: 3rem 0 0 1.5rem;
@@ -499,6 +504,11 @@ p {
   left: 0;
   background-color: hsla(240, 100%, 5%, 0.5);
 }
+@media (min-width: 768px) {
+  .future-bg-shadow::after {
+    display: none;
+  }
+}
 
 .new {
   padding: 3rem 1.5rem;
@@ -565,6 +575,11 @@ p {
   bottom: 0;
   left: 0;
   background-color: hsla(240, 100%, 5%, 0.5);
+}
+@media (min-width: 768px) {
+  .news-bg-color::after {
+    display: none;
+  }
 }
 
 .attribution {
