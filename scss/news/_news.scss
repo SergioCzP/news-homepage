@@ -1,0 +1,38 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.news {
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+
+  &__new {
+    gap: 2.5rem;
+  }
+
+  &__image {
+    width: 10rem;
+    object-fit: cover;
+  }
+
+  &__content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__number {
+    color: v.$grayishBlue;
+    font-weight: 900;
+    font-size: 3.2rem;
+  }
+
+  &__heading {
+    color: v.$veryDarkBlue;
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    color: v.$darkGrayishBlue;
+    line-height: 1.5;
+  }
+}

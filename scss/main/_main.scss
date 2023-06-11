@@ -1,0 +1,36 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.future {
+  padding: 3rem 1.5rem;
+
+  &__image-web {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__content {
+    flex-direction: column;
+  }
+
+  &__heading {
+    margin: 3rem 0;
+  }
+
+  &__text {
+    line-height: 1.5;
+    color: v.$darkGrayishBlue;
+  }
+
+  &__btn {
+    background-color: v.$softRed;
+    color: v.$offWhite;
+    margin-top: 3rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    width: 52.5%;
+  }
+}
