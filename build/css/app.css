@@ -361,6 +361,7 @@ p {
 @media (min-width: 768px) {
   .header {
     flex-wrap: nowrap;
+    padding: 5rem;
   }
 }
 
@@ -383,11 +384,22 @@ p {
 .logo {
   padding: 3rem 0 0 1.5rem;
 }
+@media (min-width: 768px) {
+  .logo {
+    padding: 0;
+  }
+}
 .logo__img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 5rem;
   height: 3.5rem;
+}
+@media (min-width: 768px) {
+  .logo__img {
+    width: 7rem;
+    height: 4.5rem;
+  }
 }
 
 .btn-menu {
@@ -427,6 +439,11 @@ p {
   width: 100%;
   justify-content: flex-end;
 }
+@media (min-width: 768px) {
+  .nav {
+    width: auto;
+  }
+}
 .nav__container-wd-255 {
   position: absolute;
   width: 25.5rem;
@@ -461,6 +478,11 @@ p {
 .nav__link {
   font-size: 2rem;
   color: hsl(240, 100%, 5%);
+}
+@media (min-width: 768px) {
+  .nav__link {
+    padding: 0.5rem;
+  }
 }
 
 .future {

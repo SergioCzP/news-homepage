@@ -10,6 +10,7 @@
 
   @include m.tablet {
     flex-wrap: nowrap;
+    padding: 5rem;
   }
 }
 
@@ -31,10 +32,19 @@
 .logo {
   padding: 3rem 0 0 1.5rem;
 
+  @include m.tablet {
+    padding: 0;
+  }
+
   &__img {
     object-fit: contain;
     width: 5rem;
     height: 3.5rem;
+
+    @include m.tablet {
+      width: 7rem;
+      height: 4.5rem;
+    }
   }
 }
 
@@ -75,6 +85,10 @@
   width: 100%;
   justify-content: flex-end;
 
+  @include m.tablet {
+    width: auto;
+  }
+
   &__container-wd-255 {
     position: absolute;
     width: 25.5rem;
@@ -109,5 +123,9 @@
   &__link {
     font-size: 2rem;
     color: v.$veryDarkBlue;
+
+    @include m.tablet {
+      padding: 0.5rem;
+    }
   }
 }
