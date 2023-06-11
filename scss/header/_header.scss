@@ -1,0 +1,105 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.header {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  //   padding: 3rem 1.5rem;
+
+  @include m.tablet {
+    flex-wrap: nowrap;
+  }
+}
+
+.logo {
+  padding: 3rem 0 0 1.5rem;
+
+  &__img {
+    object-fit: contain;
+    width: 5rem;
+    height: 3.5rem;
+  }
+}
+
+.btn-menu {
+  background-color: v.$offWhite;
+  border: none;
+  padding: 0.75rem;
+
+  @include m.tablet {
+    display: none;
+  }
+
+  &__icon {
+    object-fit: contain;
+    width: 4rem;
+    height: 3rem;
+  }
+
+  &__icon-close {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.container-btn-menu {
+  background-color: v.$offWhite;
+  padding: 2.25rem 1.5rem 0 0;
+
+  width: 25.5rem;
+  justify-content: flex-end;
+
+  @include m.tablet {
+    display: none;
+  }
+}
+
+.nav {
+  width: 100%;
+  justify-content: flex-end;
+
+  &__container-wd-255 {
+    position: absolute;
+    width: 25.5rem;
+    height: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: v.$offWhite;
+    gap: 4rem;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    @include m.tablet {
+      position: relative;
+      flex-direction: row;
+      height: auto;
+      width: auto;
+      background-color: transparent;
+    }
+
+    &--active {
+      padding: 2.5rem;
+      height: calc(100vh - 65px);
+
+      @include m.tablet {
+        height: auto;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 2rem;
+    color: v.$veryDarkBlue;
+  }
+}
+
+.body-shadow {
+  background-color: hsl(240 100% 5% / 0.5);
+
+  @include m.tablet {
+    background-color: transparent;
+  }
+}

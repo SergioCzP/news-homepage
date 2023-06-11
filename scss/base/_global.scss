@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: v.$font;
+  font-size: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+*[class~="flex"] {
+  display: flex;
+}
