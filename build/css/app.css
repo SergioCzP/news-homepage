@@ -613,6 +613,12 @@ p {
   gap: 3rem;
   padding: 3rem 1.5rem;
 }
+@media (min-width: 768px) {
+  .news {
+    flex-direction: row;
+    padding: 7rem 5rem;
+  }
+}
 .news__new {
   gap: 2.5rem;
 }

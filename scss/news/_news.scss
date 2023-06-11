@@ -7,6 +7,11 @@
   gap: 3rem;
   padding: 3rem 1.5rem;
 
+  @include m.tablet {
+    flex-direction: row;
+    padding: 7rem 5rem;
+  }
+
   &__new {
     gap: 2.5rem;
   }
