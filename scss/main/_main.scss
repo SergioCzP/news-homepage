@@ -29,6 +29,10 @@
       gap: 3rem;
       padding: 10rem 0 12.5rem;
     }
+
+    @include m.mindesk {
+      padding: 5rem 0;
+    }
   }
 
   &__heading {
