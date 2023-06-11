@@ -488,17 +488,49 @@ p {
 .future {
   padding: 3rem 1.5rem;
 }
+@media (min-width: 768px) {
+  .future {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
 .future__image-web {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 768px) {
+  .future__image-web {
+    height: 30rem;
+  }
+}
 .future__content {
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .future__content {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 10rem 0 12.5rem;
+  }
+}
 .future__heading {
   margin: 3rem 0;
+}
+@media (min-width: 768px) {
+  .future__heading {
+    font-size: 4.6rem;
+    margin: 0;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .future__intro {
+    width: 50%;
+  }
 }
 .future__text {
   line-height: 1.5;
@@ -514,8 +546,20 @@ p {
   text-align: center;
   width: 52.5%;
 }
+@media (min-width: 768px) {
+  .future__btn {
+    width: 80%;
+  }
+}
 .future-main {
   position: relative;
+}
+@media (min-width: 768px) {
+  .future-main {
+    display: flex;
+    gap: 3rem;
+    padding: 0 5rem;
+  }
 }
 .future-bg-shadow::after {
   content: "";
@@ -534,6 +578,11 @@ p {
 
 .new {
   padding: 3rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .new {
+    padding: 0;
+  }
 }
 .new__container {
   padding: 3rem 2rem;
