@@ -9,6 +9,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
+    max-width: 73rem;
+  }
+
+  @include m.meddesk {
+    gap: 3.5rem;
   }
 
   &__image-web {
@@ -28,10 +33,15 @@
       flex-direction: row;
       gap: 3rem;
       padding: 10rem 0 12.5rem;
+      align-items: center;
     }
 
     @include m.mindesk {
       padding: 5rem 0;
+    }
+
+    @include m.meddesk {
+      padding: 0;
     }
   }
 
@@ -42,6 +52,11 @@
       font-size: 4.6rem;
       margin: 0;
       width: 50%;
+      font-weight: 900;
+    }
+
+    @include m.meddesk {
+      font-size: 5.4rem;
     }
   }
 
@@ -49,11 +64,22 @@
     @include m.tablet {
       width: 50%;
     }
+
+    @include m.meddesk {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3.5rem;
+    }
   }
 
   &__text {
     line-height: 1.5;
     color: v.$darkGrayishBlue;
+
+    @include m.meddesk {
+      line-height: 1.5;
+    }
   }
 
   &__btn {
@@ -69,6 +95,12 @@
     @include m.tablet {
       width: 80%;
     }
+
+    @include m.meddesk {
+      width: 55%;
+      padding: 1.5rem 2rem;
+      margin: 0;
+    }
   }
 
   &-main {
@@ -77,6 +109,12 @@
       display: flex;
       gap: 3rem;
       padding: 0 5rem;
+    }
+
+    @include m.meddesk {
+      max-width: 111rem;
+      padding-inline: 0;
+      margin: 0 auto;
     }
   }
 

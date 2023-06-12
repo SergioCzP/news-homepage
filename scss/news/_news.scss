@@ -12,6 +12,12 @@
     padding: 7rem 5rem;
   }
 
+  @include m.meddesk {
+    padding-inline: 0;
+    max-width: 111rem;
+    margin: 0 auto;
+  }
+
   &__new {
     gap: 2.5rem;
   }
@@ -35,11 +41,20 @@
   &__heading {
     color: v.$veryDarkBlue;
     font-size: 1.8rem;
+    font-weight: 900;
+
+    @include m.meddesk {
+      font-size: 1.8rem;
+    }
   }
 
   &__text {
     color: v.$darkGrayishBlue;
     line-height: 1.5;
+
+    @include m.meddesk {
+      font-size: 1.8rem;
+    }
   }
 
   &-bg-color::after {

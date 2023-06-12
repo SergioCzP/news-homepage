@@ -11,10 +11,18 @@
   &__container {
     padding: 3rem 2rem;
     background-color: v.$veryDarkBlue;
+
+    @include m.meddesk {
+      padding: 4rem 2.5rem 3.5rem;
+    }
   }
 
   &__title {
     color: v.$softOrange;
+
+    @include m.meddesk {
+      font-size: 4rem;
+    }
   }
 
   &__new {
@@ -27,6 +35,10 @@
   &__heading {
     color: v.$offWhite;
     margin: 3rem 0 1.5rem;
+
+    @include m.meddesk {
+      font-size: 2rem;
+    }
   }
 
   &__text {
