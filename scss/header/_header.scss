@@ -133,9 +133,14 @@
   &__link {
     font-size: 2rem;
     color: v.$darkGrayishBlue;
+    transition: color 0.2s ease;
 
     @include m.tablet {
       padding: 0.5rem;
+    }
+
+    &:hover {
+      color: v.$softRed;
     }
   }
 }

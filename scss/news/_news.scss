@@ -42,9 +42,14 @@
     color: v.$veryDarkBlue;
     font-size: 1.8rem;
     font-weight: 900;
+    transition: color 0.2s ease;
 
     @include m.meddesk {
       font-size: 1.8rem;
+    }
+
+    &:hover {
+      color: v.$softRed;
     }
   }
 

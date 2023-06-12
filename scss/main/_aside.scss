@@ -35,9 +35,14 @@
   &__heading {
     color: v.$offWhite;
     margin: 3rem 0 1.5rem;
+    transition: color 0.2s ease;
 
     @include m.meddesk {
       font-size: 2rem;
+    }
+
+    &:hover {
+      color: v.$softOrange;
     }
   }
 
